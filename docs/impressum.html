@@ -4,17 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Impressum — Walk the Odyssey</title>
+<script>document.documentElement.className += ' js';</script>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.6; color: #1f2933; background: #fbf4e6; }
   h1 { font-size: 26px; margin-bottom: 4px; }
   h2 { font-size: 18px; margin-top: 32px; }
   .updated { color: #6b7280; font-size: 13px; margin-bottom: 24px; }
-  .placeholder { background: #fff3cd; border: 1px solid #f0c36d; border-radius: 6px; padding: 2px 6px; font-family: monospace; }
   a { color: #1d6f8c; }
   .notice { background: #fdecec; border: 1px solid #f3a6a6; border-radius: 8px; padding: 14px 16px; margin-bottom: 28px; font-size: 14px; }
+  .langbar { flex-wrap: wrap; gap: 8px; margin: 0 0 28px; padding-bottom: 18px; border-bottom: 1px solid #e0d2b0; font-size: 14px; }
+  .langbar a { color: #1d6f8c; text-decoration: none; padding: 4px 12px; border: 1px solid #e0d2b0; border-radius: 999px; background: #fffaf0; }
+  .langbar a.active { background: #1d6f8c; color: #fff; border-color: #1d6f8c; }
+  /* Ohne JavaScript bleiben alle Sprachfassungen sichtbar (Zugänglichkeit). */
+  html.js section[data-lang] { display: none; }
+  html.js section[data-lang].active { display: block; }
+  html.js .langbar { display: flex; }
+  html:not(.js) .langbar { display: none; }
 </style>
 </head>
 <body>
+
+<nav class="langbar">
+  <a href="#de" data-lang="de">Deutsch</a>
+  <a href="#en" data-lang="en">English</a>
+  <a href="#fr" data-lang="fr">Français</a>
+  <a href="#it" data-lang="it">Italiano</a>
+  <a href="#es" data-lang="es">Español</a>
+</nav>
+
+<!-- ============================== DEUTSCH ============================== -->
+<section data-lang="de" lang="de" data-title="Impressum — Walk the Odyssey">
 
 <h1>Impressum</h1>
 <p class="updated">Stand: 8. August 2026</p>
@@ -41,7 +60,8 @@ es besteht KEINE Pflicht, eine zu beantragen, nur um sie hier zu nennen.
 Die Steuernummer gehört NICHT ins Impressum.
 
 Falls dir später eine USt-IdNr. vom Bundeszentralamt für Steuern erteilt
-wird, diesen Block einkommentieren und die Nummer eintragen:
+wird, diesen Block einkommentieren und die Nummer eintragen — dann bitte
+auch in den vier anderen Sprachfassungen weiter unten:
 
 <h2>Umsatzsteuer-Identifikationsnummer</h2>
 <p>
@@ -55,6 +75,12 @@ wird, diesen Block einkommentieren und die Nummer eintragen:
   Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren
   vor einer Verbraucherschlichtungsstelle teilzunehmen.
 </p>
+<p>
+  Wenn du in einem anderen Mitgliedstaat der Europäischen Union wohnst, kann
+  dich das Netzwerk der Europäischen Verbraucherzentren (EVZ) bei
+  grenzüberschreitenden Streitigkeiten kostenlos über deine Rechte
+  informieren.
+</p>
 <!--
 HINWEIS (nicht Teil der Veröffentlichung):
 Der frühere Verweis auf die EU-Plattform zur Online-Streitbeilegung (OS)
@@ -67,6 +93,11 @@ Die Hinweispflicht nach § 36 VSBG entfällt bei Unternehmen mit höchstens
 10 Beschäftigten (§ 36 Abs. 3 VSBG). Der obige Satz ist daher rechtlich
 nicht zwingend, wird aber aus Vorsorgegründen empfohlen, da AGB verwendet
 werden.
+
+Die französische Médiateur-Pflicht (Art. L. 611-1 ff. Code de la
+consommation) trifft nur in Frankreich NIEDERGELASSENE Unternehmer;
+Art. 5 Abs. 1 der ADR-Richtlinie 2013/11/EU knüpft an den
+Niederlassungsstaat an.
 -->
 
 <h2>Verantwortlich für den Inhalt</h2>
@@ -74,13 +105,260 @@ werden.
   Jonas Polenz (Anschrift wie oben).
 </p>
 
-<h2 style="margin-top:40px;">Legal Notice (English, informational only)</h2>
+</section>
+
+<!-- ============================== ENGLISH ============================== -->
+<section data-lang="en" lang="en" data-title="Legal Notice — Walk the Odyssey">
+
+<h1>Legal Notice</h1>
+<p class="updated">Last updated: August 8, 2026</p>
+
+<h2>Provider of the app</h2>
 <p>
-  This page is the legally operative German-language <em>Impressum</em>
-  ("legal notice"), a disclosure required for commercial online services
-  offered to users in Germany under § 5 DDG. It is not intended as, and
-  does not constitute, a general-purpose "About" page.
+  Jonas Polenz<br>
+  Konradstraße 15<br>
+  90429 Nuremberg<br>
+  Germany
 </p>
+<p>
+  Sole proprietorship under German law (<em>Einzelunternehmen</em>).
+  Information provided pursuant to § 5 of the German Digital Services Act
+  (<em>Digitale-Dienste-Gesetz</em>, DDG), implementing Article 5 of
+  Directive 2000/31/EC on electronic commerce.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Phone: +49 1578 5327924<br>
+  E-mail: <a href="mailto:jonas.polenz@software-development.net">jonas.polenz@software-development.net</a>
+</p>
+
+<h2>Responsible for content</h2>
+<p>
+  Jonas Polenz (address as above).
+</p>
+
+<h2>Consumer dispute resolution</h2>
+<p>
+  As a trader established in Germany, we are subject to German law on
+  out-of-court consumer dispute resolution. We are neither obliged nor
+  willing to participate in dispute resolution proceedings before a
+  consumer arbitration board.
+</p>
+<p>
+  If you live in another EU Member State, the European Consumer Centres
+  Network (ECC-Net) can inform you free of charge about your rights in
+  cross-border disputes.
+</p>
+
+<h2>VAT</h2>
+<p>
+  No intra-Community VAT identification number has been assigned to date.
+  This entry will be added if one is issued.
+</p>
+
+</section>
+
+<!-- ============================== FRANÇAIS ============================= -->
+<section data-lang="fr" lang="fr" data-title="Mentions légales — Walk the Odyssey">
+
+<h1>Mentions légales</h1>
+<p class="updated">Mise à jour : 8 août 2026</p>
+
+<h2>Éditeur de l'application</h2>
+<p>
+  Jonas Polenz<br>
+  Konradstraße 15<br>
+  90429 Nuremberg<br>
+  Allemagne
+</p>
+<p>
+  Entrepreneur individuel de droit allemand (<em>Einzelunternehmen</em>).
+  Mentions fournies conformément à l'article 5 de la loi allemande sur les
+  services numériques (<em>Digitale-Dienste-Gesetz</em>, DDG), transposition
+  de l'article 5 de la directive 2000/31/CE sur le commerce électronique.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Téléphone : +49 1578 5327924<br>
+  E-mail : <a href="mailto:jonas.polenz@software-development.net">jonas.polenz@software-development.net</a>
+</p>
+
+<h2>Directeur de la publication</h2>
+<p>
+  Jonas Polenz (adresse ci-dessus).
+</p>
+
+<h2>Règlement des litiges</h2>
+<p>
+  En tant que professionnel établi en Allemagne, nous relevons du droit
+  allemand en matière de règlement extrajudiciaire des litiges de
+  consommation. Nous ne sommes ni tenus ni disposés à participer à une
+  procédure de règlement des litiges devant un organisme de médiation de la
+  consommation.
+</p>
+<p>
+  Si vous résidez dans un autre État membre de l'Union européenne, le réseau
+  des Centres Européens des Consommateurs (CEC) peut vous informer
+  gratuitement sur vos droits en cas de litige transfrontalier.
+</p>
+
+<h2>Taxe sur la valeur ajoutée</h2>
+<p>
+  Aucun numéro de TVA intracommunautaire n'a été attribué à ce jour. Cette
+  mention sera ajoutée le cas échéant.
+</p>
+
+</section>
+
+<!-- ============================== ITALIANO ============================= -->
+<section data-lang="it" lang="it" data-title="Note legali — Walk the Odyssey">
+
+<h1>Note legali</h1>
+<p class="updated">Aggiornamento: 8 agosto 2026</p>
+
+<h2>Titolare dell'applicazione</h2>
+<p>
+  Jonas Polenz<br>
+  Konradstraße 15<br>
+  90429 Norimberga<br>
+  Germania
+</p>
+<p>
+  Impresa individuale di diritto tedesco (<em>Einzelunternehmen</em>).
+  Informazioni fornite ai sensi dell'articolo 5 della legge tedesca sui
+  servizi digitali (<em>Digitale-Dienste-Gesetz</em>, DDG), che recepisce
+  l'articolo 5 della direttiva 2000/31/CE sul commercio elettronico.
+</p>
+
+<h2>Contatti</h2>
+<p>
+  Telefono: +49 1578 5327924<br>
+  E-mail: <a href="mailto:jonas.polenz@software-development.net">jonas.polenz@software-development.net</a>
+</p>
+
+<h2>Responsabile dei contenuti</h2>
+<p>
+  Jonas Polenz (indirizzo come sopra).
+</p>
+
+<h2>Risoluzione delle controversie</h2>
+<p>
+  In quanto professionista stabilito in Germania, siamo soggetti al diritto
+  tedesco in materia di risoluzione extragiudiziale delle controversie dei
+  consumatori. Non siamo tenuti né disponibili a partecipare a procedure di
+  risoluzione delle controversie dinanzi a un organismo di mediazione per i
+  consumatori.
+</p>
+<p>
+  Se risiedi in un altro Stato membro dell'Unione europea, la rete dei
+  Centri Europei dei Consumatori (ECC-Net) può fornirti informazioni
+  gratuite sui tuoi diritti in caso di controversia transfrontaliera.
+</p>
+
+<h2>Partita IVA</h2>
+<p>
+  Ad oggi non ci è stato attribuito alcun numero di identificazione IVA
+  intracomunitario. L'indicazione sarà aggiunta qualora venga rilasciato.
+</p>
+
+</section>
+
+<!-- ============================== ESPAÑOL ============================== -->
+<section data-lang="es" lang="es-MX" data-title="Aviso legal — Walk the Odyssey">
+
+<h1>Aviso legal</h1>
+<p class="updated">Actualización: 8 de agosto de 2026</p>
+
+<h2>Responsable de la aplicación</h2>
+<p>
+  Jonas Polenz<br>
+  Konradstraße 15<br>
+  90429 Núremberg<br>
+  Alemania
+</p>
+<p>
+  Persona física con actividad empresarial conforme al derecho alemán
+  (<em>Einzelunternehmen</em>). Datos proporcionados conforme al artículo 5
+  de la Ley alemana de Servicios Digitales
+  (<em>Digitale-Dienste-Gesetz</em>, DDG), que transpone el artículo 5 de la
+  Directiva 2000/31/CE sobre comercio electrónico.
+</p>
+
+<h2>Contacto</h2>
+<p>
+  Teléfono: +49 1578 5327924<br>
+  Correo electrónico: <a href="mailto:jonas.polenz@software-development.net">jonas.polenz@software-development.net</a>
+</p>
+
+<h2>Responsable del contenido</h2>
+<p>
+  Jonas Polenz (domicilio indicado arriba).
+</p>
+
+<h2>Solución de controversias</h2>
+<p>
+  Como proveedor establecido en Alemania, estamos sujetos al derecho alemán
+  en materia de solución extrajudicial de controversias de consumo. No
+  estamos obligados ni dispuestos a participar en procedimientos de
+  solución de controversias ante una junta de conciliación para
+  consumidores.
+</p>
+<p>
+  Si resides en la Unión Europea, la red de Centros Europeos del Consumidor
+  (ECC-Net) puede orientarte de forma gratuita sobre tus derechos en
+  controversias transfronterizas.
+</p>
+
+<h2>Registro fiscal</h2>
+<p>
+  A la fecha no se nos ha asignado un número de identificación a efectos
+  del IVA intracomunitario. El dato se agregará en caso de que se nos
+  otorgue.
+</p>
+
+</section>
+
+<script>
+(function () {
+  var SUPPORTED = ['de', 'en', 'fr', 'it', 'es'];
+  var FALLBACK = 'de';
+
+  function requested() {
+    var q = (location.search.match(/[?&]lang=([a-zA-Z-]+)/) || [])[1];
+    var h = location.hash.replace('#', '');
+    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    var candidates = [q, h, nav];
+    for (var i = 0; i < candidates.length; i++) {
+      if (!candidates[i]) continue;
+      var code = String(candidates[i]).toLowerCase().slice(0, 2);
+      if (SUPPORTED.indexOf(code) > -1) return code;
+    }
+    return FALLBACK;
+  }
+
+  function show(lang) {
+    var sections = document.querySelectorAll('section[data-lang]');
+    for (var i = 0; i < sections.length; i++) {
+      var match = sections[i].getAttribute('data-lang') === lang;
+      sections[i].classList.toggle('active', match);
+      if (match) {
+        document.documentElement.setAttribute('lang', sections[i].getAttribute('lang') || lang);
+        var t = sections[i].getAttribute('data-title');
+        if (t) document.title = t;
+      }
+    }
+    var links = document.querySelectorAll('.langbar a');
+    for (var j = 0; j < links.length; j++) {
+      links[j].classList.toggle('active', links[j].getAttribute('data-lang') === lang);
+    }
+  }
+
+  show(requested());
+  window.addEventListener('hashchange', function () { show(requested()); });
+})();
+</script>
 
 </body>
 </html>

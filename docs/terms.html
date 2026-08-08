@@ -4,18 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nutzungsbedingungen (AGB) — Walk the Odyssey</title>
+<script>document.documentElement.className += ' js';</script>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.6; color: #1f2933; background: #fbf4e6; }
   h1 { font-size: 26px; margin-bottom: 4px; }
   h2 { font-size: 18px; margin-top: 32px; }
   .updated { color: #6b7280; font-size: 13px; margin-bottom: 24px; }
-  .placeholder { background: #fff3cd; border: 1px solid #f0c36d; border-radius: 6px; padding: 2px 6px; font-family: monospace; }
   a { color: #1d6f8c; }
   .notice { background: #fdecec; border: 1px solid #f3a6a6; border-radius: 8px; padding: 14px 16px; margin-bottom: 28px; font-size: 14px; }
-  .lang-divider { border: none; border-top: 2px solid #e0d2b0; margin: 48px 0; }
+  .langbar { flex-wrap: wrap; gap: 8px; margin: 0 0 28px; padding-bottom: 18px; border-bottom: 1px solid #e0d2b0; font-size: 14px; }
+  .langbar a { color: #1d6f8c; text-decoration: none; padding: 4px 12px; border: 1px solid #e0d2b0; border-radius: 999px; background: #fffaf0; }
+  .langbar a.active { background: #1d6f8c; color: #fff; border-color: #1d6f8c; }
+  /* Ohne JavaScript bleiben alle Sprachfassungen sichtbar (Zugänglichkeit). */
+  html.js section[data-lang] { display: none; }
+  html.js section[data-lang].active { display: block; }
+  html.js .langbar { display: flex; }
+  html:not(.js) .langbar { display: none; }
 </style>
 </head>
 <body>
+
+<nav class="langbar">
+  <a href="#de" data-lang="de">Deutsch</a>
+  <a href="#en" data-lang="en">English</a>
+  <a href="#fr" data-lang="fr">Français</a>
+  <a href="#it" data-lang="it">Italiano</a>
+  <a href="#es" data-lang="es">Español</a>
+</nav>
+
+<!-- ============================== DEUTSCH ============================== -->
+<section data-lang="de" lang="de" data-title="Nutzungsbedingungen (AGB) — Walk the Odyssey">
 
 <h1>Nutzungsbedingungen (Allgemeine Geschäftsbedingungen)</h1>
 <p class="updated">Version 1.1 — Stand: 8. August 2026</p>
@@ -134,72 +152,578 @@ Körperschäden ausschlösse (Klauselverbot ohne Wertungsmöglichkeit).
 <h2>§ 9 Schlussbestimmungen</h2>
 <p>
   Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des
-  UN-Kaufrechts, soweit dem nicht zwingende verbraucherschützende
-  Vorschriften deines gewöhnlichen Aufenthaltsortes entgegenstehen. Sollte
-  eine Bestimmung dieser Nutzungsbedingungen unwirksam sein, bleibt die
-  Wirksamkeit der übrigen Bestimmungen unberührt.
+  UN-Kaufrechts. Als Verbraucher:in behältst du jedoch den Schutz der
+  zwingenden verbraucherschützenden Vorschriften deines gewöhnlichen
+  Aufenthaltsorts, die dir durch diese Rechtswahl nicht entzogen werden
+  können. Sollte eine Bestimmung dieser Nutzungsbedingungen unwirksam sein,
+  bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
 </p>
 
-<hr class="lang-divider">
+<h2>§ 10 Sprachfassungen</h2>
+<p>
+  Diese Nutzungsbedingungen sind auf Deutsch, Englisch, Französisch,
+  Italienisch und Spanisch verfügbar. Bei Abweichungen zwischen den
+  Fassungen gilt dir gegenüber als Verbraucher:in die Fassung in der von
+  dir verwendeten Sprache.
+</p>
 
-<h1 lang="en">Terms of Use (English translation, for convenience)</h1>
-<p class="updated">Version 1.1 — Last updated: August 8, 2026 — the German
-version above is the legally binding original; this is an unofficial
-translation.</p>
+</section>
 
+<!-- ============================== ENGLISH ============================== -->
+<section data-lang="en" lang="en" data-title="Terms of Use — Walk the Odyssey">
+
+<h1>Terms of Use</h1>
+<p class="updated">Version 1.1 — Last updated: August 8, 2026</p>
+
+<h2>Section 1 — Scope</h2>
 <p>
-  These Terms of Use govern your use of the "Walk the Odyssey" mobile app, provided
-  by Jonas Polenz. Paid "Premium" features are purchased exclusively
-  through Apple's in-app purchase system (StoreKit); Apple's own Media
-  Services Terms and Conditions apply in addition to these terms for that
-  purchase.
+  These Terms of Use govern your use of the mobile application "Walk the
+  Odyssey" (the "app"), provided by Jonas Polenz ("we" / "the provider").
+  By installing and using the app you accept these Terms. For the purchase
+  of paid features ("Premium"), Apple's own terms (Apple Media Services
+  Terms and Conditions) apply in addition, since the purchase is handled
+  entirely through Apple's in-app purchase system (StoreKit).
+</p>
+
+<h2>Section 2 — Description of the service</h2>
+<p>
+  Walk the Odyssey is a walking-distance tracking app accompanied by a
+  story told to the rhythm of the Odyssey. The free version covers tracking
+  the distance you have walked and unlocking individual chapters. The paid
+  subscription ("Premium") unlocks additional features, including: a home
+  screen widget, comparisons with historical and mythological figures, the
+  Terracotta workshop (a digital collecting and creation feature), the full
+  logbook of all chapters, Story Mode, and ad-free use. The exact range of
+  features may change as the app develops; any substantial reduction will
+  be announced.
+</p>
+
+<h2>Section 3 — Contract, payment and prices</h2>
+<p>
+  The Premium subscription is concluded and billed exclusively through the
+  Apple App Store. The prices displayed in the App Store at the time of
+  purchase, localised for your country, apply — these are decisive, not any
+  differing price indications inside the app. Payment processing, invoicing
+  and payment data lie entirely with Apple; we receive no payment data
+  (card details or similar).
+</p>
+
+<h2>Section 4 — Term, automatic renewal and cancellation</h2>
+<p>
+  The subscription renews automatically for the period selected (one month
+  or one year) unless cancelled at least 24 hours before the end of the
+  current period. Cancellation is made exclusively through your Apple ID
+  account settings (Settings → [your name] → Subscriptions) — not inside
+  the app, since Apple manages this centrally for all subscriptions. A
+  billing period already started is not refunded pro rata; access to
+  Premium features remains until the end of the paid period.
+</p>
+
+<h2>Section 5 — Health notice</h2>
+<p>
+  Walk the Odyssey is made for entertainment and to motivate you to move
+  more. The app counts steps or measures walking distance and reflects your
+  progress along a story. It is not a medical device, does not provide
+  diagnoses or treatment recommendations, and does not replace medical or
+  therapeutic advice.
 </p>
 <p>
-  <strong>Subscription &amp; billing:</strong> Premium unlocks a
-  home-screen widget, pace comparisons against mythological figures, the
-  Terracotta workshop, the full in-app log, Story Mode, and an ad-free
-  experience. Prices shown at the time of purchase in the App Store are
-  binding. Subscriptions auto-renew unless cancelled at least 24 hours
-  before the end of the current period, via your Apple ID account
-  settings (Settings → [your name] → Subscriptions) — not inside the app
-  itself, since Apple manages this centrally for all subscriptions. No
-  partial refund is given for an already-started billing period.
+  You decide on the type and extent of your physical activity at your own
+  responsibility. Please don't overexert yourself, listen to your body, and
+  consult a doctor before starting or increasing physical activity —
+  especially if you have pre-existing conditions, symptoms, are pregnant,
+  or are unsure. The playful elements (e.g. daily goals, streaks,
+  comparisons with historical or mythological figures) are motivational
+  aids only and not a prompt to overexert yourself.
+</p>
+
+<h2>Section 6 — Rights of use</h2>
+<p>
+  We grant you a simple, non-transferable, non-sublicensable right to use
+  the app for its intended purpose on your own devices. Passing access to
+  third parties, reverse engineering (except where mandatorily permitted by
+  law), and any commercial exploitation of the app or its content are not
+  permitted.
+</p>
+
+<h2>Section 7 — Availability and changes</h2>
+<p>
+  We aim for high availability of the app but cannot guarantee it
+  (maintenance, outages of Apple services such as iCloud or HealthKit,
+  connectivity issues). Individual features (e.g. cloud backup, HealthKit
+  synchronisation) require the corresponding permissions and a functioning
+  Apple service, which lies outside our control.
+</p>
+
+<h2>Section 8 — Liability</h2>
+<p>
+  We are liable without limitation for intent and gross negligence, for
+  damage arising from injury to life, body or health, and under applicable
+  product liability law. In case of slightly negligent breach of material
+  contractual obligations, liability is limited to foreseeable,
+  contract-typical damage. Otherwise, liability for slight negligence is
+  excluded.
 </p>
 <p>
-  <strong>Health notice:</strong> Walk the Odyssey is made for entertainment and to
-  motivate you to move more. It counts steps or measures walking distance
-  and reflects your progress along a story. It is not a medical device,
-  does not provide diagnoses or treatment recommendations, and does not
-  replace medical or therapeutic advice. You decide on the type and extent
-  of your physical activity at your own responsibility. Please don't
-  overexert yourself, listen to your body, and consult a doctor before
-  starting or increasing physical activity — especially if you have
-  pre-existing conditions, symptoms, are pregnant, or are unsure. The
-  playful elements (e.g. daily goals, streaks, comparisons) are
-  motivational aids only and not a prompt to overexert yourself.
+  The above limitations do not apply to damage arising from injury to life,
+  body or health, or to claims under product liability law; in those cases
+  we are liable in accordance with the statutory provisions.
+</p>
+
+<h2>Section 9 — Final provisions</h2>
+<p>
+  The law of the Federal Republic of Germany applies, excluding the UN
+  Convention on Contracts for the International Sale of Goods. As a
+  consumer, however, you retain the protection of the mandatory consumer
+  protection provisions of your country of habitual residence, which this
+  choice of law cannot deprive you of. Should any provision of these Terms
+  be invalid, the validity of the remaining provisions is unaffected.
+</p>
+
+<h2>Section 10 — Language versions</h2>
+<p>
+  These Terms are available in German, English, French, Italian and
+  Spanish. In the event of discrepancies between versions, the version in
+  the language you use prevails as regards you as a consumer.
+</p>
+
+</section>
+
+<!-- ============================== FRANÇAIS ============================= -->
+<section data-lang="fr" lang="fr" data-title="Conditions générales d'utilisation — Walk the Odyssey">
+
+<h1>Conditions générales d'utilisation</h1>
+<p class="updated">Version 1.1 — Mise à jour : 8 août 2026</p>
+
+<h2>Article 1 — Champ d'application</h2>
+<p>
+  Les présentes conditions générales d'utilisation régissent l'utilisation
+  de l'application mobile « Walk the Odyssey » (ci-après « l'application »),
+  proposée par Jonas Polenz (ci-après « nous » / « l'éditeur »). En
+  installant et en utilisant l'application, tu acceptes les présentes
+  conditions. Pour l'acquisition des fonctions payantes (« Premium »), les
+  conditions d'Apple (<em>Apple Media Services Terms and Conditions</em>)
+  s'appliquent en complément, l'achat étant intégralement traité par le
+  système d'achat intégré d'Apple (StoreKit).
+</p>
+
+<h2>Article 2 — Description du service</h2>
+<p>
+  Walk the Odyssey est une application de suivi de marche accompagnée d'un
+  récit rythmé par l'Odyssée. La version gratuite permet de suivre la
+  distance parcourue et de débloquer certains chapitres. L'abonnement
+  payant (« Premium ») donne accès à des fonctions supplémentaires,
+  notamment : un widget d'écran d'accueil, la comparaison avec des figures
+  historiques ou mythologiques, l'atelier de terre cuite (fonction
+  numérique de collection et de création), le journal de bord complet, le
+  mode Histoire ainsi qu'une utilisation sans publicité. L'étendue exacte
+  des fonctions peut évoluer avec le développement de l'application ; toute
+  dégradation substantielle sera annoncée.
+</p>
+
+<h2>Article 3 — Conclusion du contrat, paiement et prix</h2>
+<p>
+  L'abonnement Premium est souscrit et facturé exclusivement via l'App
+  Store d'Apple. Les prix applicables sont ceux affichés dans l'App Store
+  au moment de l'achat, localisés pour ton pays ; ce sont eux qui font foi,
+  et non d'éventuelles indications divergentes au sein de l'application. Le
+  traitement du paiement, la facturation et les données de paiement
+  relèvent intégralement d'Apple ; nous ne recevons aucune donnée de
+  paiement (carte bancaire ou autre).
+</p>
+
+<h2>Article 4 — Durée, reconduction automatique et résiliation</h2>
+<p>
+  L'abonnement est reconduit automatiquement pour la période choisie (un
+  mois ou un an), sauf résiliation au plus tard 24 heures avant la fin de
+  la période en cours. La résiliation s'effectue exclusivement depuis les
+  réglages de ton identifiant Apple (Réglages → [ton nom] → Abonnements),
+  et non dans l'application, Apple assurant cette gestion de manière
+  centralisée pour tous les abonnements. Une période de facturation déjà
+  entamée n'est pas remboursée au prorata ; l'accès aux fonctions Premium
+  reste actif jusqu'à la fin de la période payée.
+</p>
+
+<h2>Article 5 — Avertissement relatif à la santé</h2>
+<p>
+  Walk the Odyssey a pour objet le divertissement et la motivation à
+  bouger davantage. L'application compte les pas ou mesure la distance
+  parcourue à pied et représente ta progression au fil d'un récit. Elle
+  n'est pas un dispositif médical, n'établit aucun diagnostic, ne formule
+  aucune recommandation thérapeutique et ne remplace pas un avis médical ou
+  paramédical.
 </p>
 <p>
-  <strong>License:</strong> We grant you a simple, non-transferable right
-  to use the app for its intended purpose on your own devices.
-  Redistribution, reverse engineering (except where mandated by law), and
-  commercial reuse of the app or its content are not permitted.
+  Tu décides sous ta seule responsabilité de la nature et de l'intensité de
+  ton activité physique. Ne force pas, écoute les signaux de ton corps et
+  consulte un médecin avant de commencer ou d'intensifier une activité
+  physique — en particulier en cas d'antécédents médicaux, de symptômes, de
+  grossesse ou de doute. Les éléments ludiques (objectifs quotidiens,
+  séries, comparaisons avec des figures historiques ou mythologiques) sont
+  de simples aides à la motivation et ne constituent en aucun cas une
+  incitation au surmenage.
+</p>
+
+<h2>Article 6 — Droits d'utilisation</h2>
+<p>
+  Nous t'accordons un droit simple, non transférable et non
+  sous-licenciable d'utiliser l'application conformément à sa destination
+  sur tes propres appareils. La mise à disposition de l'accès à des tiers,
+  l'ingénierie inverse (sauf dans les cas impérativement autorisés par la
+  loi) ainsi que toute exploitation commerciale de l'application ou de ses
+  contenus sont interdites.
+</p>
+
+<h2>Article 7 — Disponibilité et évolutions</h2>
+<p>
+  Nous nous efforçons d'assurer une disponibilité élevée de l'application,
+  sans pouvoir la garantir (maintenance, indisponibilité de services Apple
+  tels qu'iCloud ou HealthKit, problèmes de connexion). Certaines fonctions
+  (par exemple la sauvegarde iCloud ou la synchronisation HealthKit)
+  supposent les autorisations correspondantes et le bon fonctionnement d'un
+  service Apple, ce qui échappe à notre contrôle.
+</p>
+
+<h2>Article 8 — Responsabilité</h2>
+<p>
+  Notre responsabilité est engagée sans limitation en cas de faute
+  intentionnelle ou de négligence grave, pour les dommages résultant d'une
+  atteinte à la vie, à l'intégrité physique ou à la santé, ainsi que dans
+  les conditions prévues par la législation sur la responsabilité du fait
+  des produits défectueux. En cas de manquement par négligence légère à une
+  obligation contractuelle essentielle, notre responsabilité est limitée au
+  dommage prévisible et typique du contrat. Pour le reste, la
+  responsabilité pour négligence légère est exclue.
 </p>
 <p>
-  <strong>Availability &amp; liability:</strong> We aim for high
-  availability but cannot guarantee it (maintenance, outages of Apple
-  services such as iCloud/HealthKit, connectivity issues). Liability is
-  unlimited for intent, gross negligence, injury to life, body or health,
-  and under applicable product liability law; for slight negligence,
-  liability is limited to foreseeable, contract-typical damage for
-  breaches of material obligations, and otherwise excluded. The above
-  limitations do not apply to damage arising from injury to life, body or
-  health, or to claims under product liability law.
+  Les limitations qui précèdent ne s'appliquent pas aux dommages résultant
+  d'une atteinte à la vie, à l'intégrité physique ou à la santé, ni aux
+  demandes fondées sur la responsabilité du fait des produits défectueux ;
+  dans ces cas, notre responsabilité est engagée conformément aux
+  dispositions légales.
+</p>
+
+<h2>Article 9 — Dispositions finales</h2>
+<p>
+  Le droit de la République fédérale d'Allemagne s'applique, à l'exclusion
+  de la Convention des Nations unies sur les contrats de vente
+  internationale de marchandises. En tant que consommateur, tu conserves
+  toutefois le bénéfice des dispositions impératives de protection des
+  consommateurs en vigueur dans ton pays de résidence habituelle, qui ne
+  peuvent t'être retirées par ce choix de loi. Si une clause des présentes
+  conditions était nulle, la validité des autres clauses n'en serait pas
+  affectée.
+</p>
+
+<h2>Article 10 — Versions linguistiques</h2>
+<p>
+  Les présentes conditions sont disponibles en allemand, en anglais, en
+  français, en italien et en espagnol. En cas de divergence entre les
+  versions, la version rédigée dans la langue que tu utilises prévaut à ton
+  égard en tant que consommateur.
+</p>
+
+</section>
+
+<!-- ============================== ITALIANO ============================= -->
+<section data-lang="it" lang="it" data-title="Condizioni generali d'uso — Walk the Odyssey">
+
+<h1>Condizioni generali d'uso</h1>
+<p class="updated">Versione 1.1 — Aggiornamento: 8 agosto 2026</p>
+
+<h2>Art. 1 — Ambito di applicazione</h2>
+<p>
+  Le presenti condizioni generali d'uso disciplinano l'utilizzo
+  dell'applicazione mobile «Walk the Odyssey» (di seguito «l'app»),
+  offerta da Jonas Polenz (di seguito «noi» / «il fornitore»). Installando
+  e utilizzando l'app accetti le presenti condizioni. Per l'acquisto delle
+  funzioni a pagamento («Premium») si applicano in aggiunta le condizioni
+  di Apple (<em>Apple Media Services Terms and Conditions</em>), poiché
+  l'acquisto è gestito interamente dal sistema di acquisti in-app di Apple
+  (StoreKit).
+</p>
+
+<h2>Art. 2 — Descrizione del servizio</h2>
+<p>
+  Walk the Odyssey è un'app per il monitoraggio dei percorsi a piedi
+  accompagnata da un racconto scandito dal ritmo dell'Odissea. La versione
+  gratuita comprende il monitoraggio della distanza percorsa e lo sblocco
+  di singoli capitoli. L'abbonamento a pagamento («Premium») sblocca
+  funzioni aggiuntive, tra cui: un widget per la schermata Home, il
+  confronto con figure storiche e mitologiche, il laboratorio di terracotta
+  (funzione digitale di collezione e creazione), il diario di bordo
+  completo, la modalità Storia e l'utilizzo senza pubblicità. L'esatta
+  gamma di funzioni può variare con lo sviluppo dell'app; eventuali
+  peggioramenti sostanziali verranno annunciati.
+</p>
+
+<h2>Art. 3 — Conclusione del contratto, pagamento e prezzi</h2>
+<p>
+  L'abbonamento Premium viene sottoscritto e fatturato esclusivamente
+  tramite l'App Store di Apple. Si applicano i prezzi visualizzati nell'App
+  Store al momento dell'acquisto e localizzati per il tuo Paese: sono
+  questi a fare fede, e non eventuali indicazioni difformi all'interno
+  dell'app. La gestione del pagamento, la fatturazione e i dati di
+  pagamento competono interamente ad Apple; noi non riceviamo alcun dato di
+  pagamento (carta di credito o simili).
+</p>
+
+<h2>Art. 4 — Durata, rinnovo automatico e disdetta</h2>
+<p>
+  L'abbonamento si rinnova automaticamente per il periodo scelto (un mese o
+  un anno), salvo disdetta almeno 24 ore prima della scadenza del periodo
+  in corso. La disdetta avviene esclusivamente dalle impostazioni del tuo
+  ID Apple (Impostazioni → [il tuo nome] → Abbonamenti) e non all'interno
+  dell'app, poiché Apple gestisce centralmente tutti gli abbonamenti. Un
+  periodo di fatturazione già iniziato non viene rimborsato pro rata;
+  l'accesso alle funzioni Premium resta attivo fino al termine del periodo
+  pagato.
+</p>
+
+<h2>Art. 5 — Avvertenza sulla salute</h2>
+<p>
+  Walk the Odyssey ha finalità di intrattenimento e di motivazione a
+  muoversi di più. L'app conta i passi o misura la distanza percorsa a
+  piedi e rappresenta i tuoi progressi lungo un racconto. Non è un
+  dispositivo medico, non formula diagnosi né raccomandazioni terapeutiche
+  e non sostituisce la consulenza medica o terapeutica.
 </p>
 <p>
-  German law applies, excluding the UN Convention on Contracts for the
-  International Sale of Goods, without prejudice to mandatory consumer
-  protection law of your habitual residence.
+  Decidi sotto la tua esclusiva responsabilità il tipo e l'intensità della
+  tua attività fisica. Non forzare, ascolta i segnali del tuo corpo e
+  consulta un medico prima di iniziare o aumentare l'attività fisica, in
+  particolare in caso di patologie preesistenti, disturbi, gravidanza o
+  incertezza. Gli elementi ludici (ad esempio obiettivi giornalieri, serie,
+  confronti con figure storiche o mitologiche) sono semplici aiuti alla
+  motivazione e non costituiscono un invito allo sforzo eccessivo.
 </p>
+
+<h2>Art. 6 — Diritti d'uso</h2>
+<p>
+  Ti concediamo un diritto semplice, non trasferibile e non
+  sublicenziabile di utilizzare l'app secondo la sua destinazione d'uso sui
+  tuoi dispositivi. Non sono consentiti la cessione dell'accesso a terzi,
+  il reverse engineering (salvo nei casi imperativamente consentiti dalla
+  legge) e qualsiasi sfruttamento commerciale dell'app o dei suoi
+  contenuti.
+</p>
+
+<h2>Art. 7 — Disponibilità e modifiche</h2>
+<p>
+  Ci impegniamo a garantire un'elevata disponibilità dell'app, senza
+  tuttavia poterla assicurare (manutenzione, interruzioni di servizi Apple
+  come iCloud o HealthKit, problemi di connessione). Alcune funzioni (ad
+  esempio il backup su iCloud o la sincronizzazione con HealthKit)
+  presuppongono le relative autorizzazioni e il corretto funzionamento di
+  un servizio Apple, circostanze che esulano dal nostro controllo.
+</p>
+
+<h2>Art. 8 — Responsabilità</h2>
+<p>
+  Rispondiamo senza limitazioni in caso di dolo e colpa grave, per i danni
+  derivanti da lesione della vita, dell'integrità fisica o della salute,
+  nonché ai sensi della normativa sulla responsabilità da prodotto
+  difettoso. In caso di violazione per colpa lieve di obblighi contrattuali
+  essenziali, la responsabilità è limitata al danno prevedibile e tipico
+  del contratto. Per il resto, la responsabilità per colpa lieve è esclusa.
+</p>
+<p>
+  Le limitazioni che precedono non si applicano ai danni derivanti da
+  lesione della vita, dell'integrità fisica o della salute, né alle pretese
+  fondate sulla normativa in materia di responsabilità da prodotto
+  difettoso; in tali casi rispondiamo secondo le disposizioni di legge.
+</p>
+
+<h2>Art. 9 — Disposizioni finali</h2>
+<p>
+  Si applica il diritto della Repubblica Federale di Germania, con
+  esclusione della Convenzione delle Nazioni Unite sui contratti di
+  compravendita internazionale di merci. In qualità di consumatore
+  conservi tuttavia la tutela offerta dalle disposizioni imperative a
+  protezione dei consumatori vigenti nel tuo Paese di residenza abituale,
+  che questa scelta di legge non può sottrarti. L'eventuale invalidità di
+  una clausola non pregiudica la validità delle restanti disposizioni.
+</p>
+
+<h2>Art. 10 — Versioni linguistiche</h2>
+<p>
+  Le presenti condizioni sono disponibili in tedesco, inglese, francese,
+  italiano e spagnolo. In caso di divergenze tra le versioni, nei tuoi
+  confronti come consumatore prevale la versione redatta nella lingua che
+  utilizzi.
+</p>
+
+</section>
+
+<!-- ============================== ESPAÑOL ============================== -->
+<section data-lang="es" lang="es-MX" data-title="Términos y Condiciones de Uso — Walk the Odyssey">
+
+<h1>Términos y Condiciones de Uso</h1>
+<p class="updated">Versión 1.1 — Actualización: 8 de agosto de 2026</p>
+
+<h2>Cláusula 1 — Ámbito de aplicación</h2>
+<p>
+  Estos Términos y Condiciones regulan el uso de la aplicación móvil «Walk
+  the Odyssey» (en adelante, «la app»), ofrecida por Jonas Polenz (en
+  adelante, «nosotros» / «el proveedor»). Al instalar y usar la app aceptas
+  estos Términos. Para la adquisición de funciones de pago («Premium»)
+  aplican adicionalmente las condiciones de Apple (<em>Apple Media Services
+  Terms and Conditions</em>), ya que la compra se procesa íntegramente a
+  través del sistema de compras dentro de la app de Apple (StoreKit).
+</p>
+
+<h2>Cláusula 2 — Descripción del servicio</h2>
+<p>
+  Walk the Odyssey es una app de seguimiento de caminatas acompañada de una
+  historia narrada al ritmo de la Odisea. La versión gratuita incluye el
+  seguimiento de la distancia recorrida y el desbloqueo de algunos
+  capítulos. La suscripción de pago («Premium») desbloquea funciones
+  adicionales, entre ellas: un widget para la pantalla de inicio, la
+  comparación con figuras históricas y mitológicas, el taller de terracota
+  (función digital de colección y creación), la bitácora completa, el modo
+  Historia y el uso sin publicidad. El alcance exacto de las funciones
+  puede cambiar conforme se desarrolla la app; cualquier deterioro
+  sustancial será anunciado.
+</p>
+
+<h2>Cláusula 3 — Celebración del contrato, pago y precios</h2>
+<p>
+  La suscripción Premium se contrata y factura exclusivamente a través de
+  la App Store de Apple. Aplican los precios mostrados en la App Store al
+  momento de la compra y localizados para tu país; esos precios son los
+  válidos, y no eventuales indicaciones distintas dentro de la app. El
+  procesamiento del pago, la facturación y los datos de pago corresponden
+  íntegramente a Apple; nosotros no recibimos ningún dato de pago (tarjeta
+  bancaria o similares).
+</p>
+
+<h2>Cláusula 4 — Vigencia, renovación automática y cancelación</h2>
+<p>
+  La suscripción se renueva automáticamente por el periodo elegido (un mes
+  o un año), salvo que se cancele a más tardar 24 horas antes de que
+  termine el periodo en curso. La cancelación se realiza exclusivamente
+  desde los ajustes de tu ID de Apple (Ajustes → [tu nombre] →
+  Suscripciones) y no dentro de la app, ya que Apple gestiona de forma
+  centralizada todas las suscripciones. Un periodo de facturación ya
+  iniciado no se reembolsa de forma proporcional; el acceso a las funciones
+  Premium se mantiene hasta el final del periodo pagado.
+</p>
+
+<h2>Cláusula 5 — Advertencia sobre salud</h2>
+<p>
+  Walk the Odyssey tiene fines de entretenimiento y de motivación para
+  moverte más. La app cuenta pasos o mide la distancia recorrida caminando
+  y representa tu avance a lo largo de una historia. No es un dispositivo
+  médico, no emite diagnósticos ni recomendaciones terapéuticas y no
+  sustituye la asesoría médica o terapéutica.
+</p>
+<p>
+  Tú decides bajo tu propia responsabilidad el tipo y la intensidad de tu
+  actividad física. No te exijas de más, escucha las señales de tu cuerpo y
+  consulta a un médico antes de comenzar o aumentar la actividad física,
+  especialmente si tienes padecimientos previos, molestias, estás
+  embarazada o tienes dudas. Los elementos lúdicos (por ejemplo, metas
+  diarias, rachas o comparaciones con figuras históricas o mitológicas) son
+  únicamente ayudas de motivación y no constituyen una invitación al
+  esfuerzo excesivo.
+</p>
+
+<h2>Cláusula 6 — Derechos de uso</h2>
+<p>
+  Te concedemos un derecho simple, intransferible y no sublicenciable para
+  usar la app conforme a su finalidad en tus propios dispositivos. No están
+  permitidos la cesión del acceso a terceros, la ingeniería inversa (salvo
+  en los casos imperativamente permitidos por la ley) ni el
+  aprovechamiento comercial de la app o de sus contenidos.
+</p>
+
+<h2>Cláusula 7 — Disponibilidad y cambios</h2>
+<p>
+  Procuramos una alta disponibilidad de la app, aunque no podemos
+  garantizarla (mantenimiento, fallas de servicios de Apple como iCloud o
+  HealthKit, problemas de conexión). Algunas funciones (por ejemplo, la
+  copia de seguridad en iCloud o la sincronización con HealthKit) requieren
+  las autorizaciones correspondientes y el funcionamiento correcto de un
+  servicio de Apple, lo cual queda fuera de nuestro control.
+</p>
+
+<h2>Cláusula 8 — Responsabilidad</h2>
+<p>
+  Respondemos de forma ilimitada en casos de dolo y negligencia grave, por
+  daños derivados de lesiones a la vida, la integridad física o la salud,
+  así como conforme a la legislación sobre responsabilidad por productos
+  defectuosos. En caso de incumplimiento por negligencia leve de
+  obligaciones contractuales esenciales, la responsabilidad se limita al
+  daño previsible y típico del contrato. En lo demás, se excluye la
+  responsabilidad por negligencia leve.
+</p>
+<p>
+  Las limitaciones anteriores no aplican a daños derivados de lesiones a la
+  vida, la integridad física o la salud, ni a reclamaciones fundadas en la
+  legislación sobre responsabilidad por productos defectuosos; en esos
+  casos respondemos conforme a las disposiciones legales.
+</p>
+
+<h2>Cláusula 9 — Disposiciones finales</h2>
+<p>
+  Aplica el derecho de la República Federal de Alemania, con exclusión de
+  la Convención de las Naciones Unidas sobre los Contratos de Compraventa
+  Internacional de Mercaderías. No obstante, como consumidor conservas la
+  protección que te otorgan las disposiciones imperativas de protección al
+  consumidor vigentes en tu país de residencia habitual, las cuales no
+  pueden serte retiradas por esta elección de ley. Si alguna cláusula de
+  estos Términos resultara inválida, ello no afectará la validez de las
+  demás.
+</p>
+
+<h2>Cláusula 10 — Versiones en otros idiomas</h2>
+<p>
+  Estos Términos están disponibles en alemán, inglés, francés, italiano y
+  español. En caso de discrepancia entre las versiones, respecto de ti como
+  consumidor prevalece la versión redactada en el idioma que utilizas.
+</p>
+
+</section>
+
+<script>
+(function () {
+  var SUPPORTED = ['de', 'en', 'fr', 'it', 'es'];
+  var FALLBACK = 'de';
+
+  function requested() {
+    var q = (location.search.match(/[?&]lang=([a-zA-Z-]+)/) || [])[1];
+    var h = location.hash.replace('#', '');
+    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    var candidates = [q, h, nav];
+    for (var i = 0; i < candidates.length; i++) {
+      if (!candidates[i]) continue;
+      var code = String(candidates[i]).toLowerCase().slice(0, 2);
+      if (SUPPORTED.indexOf(code) > -1) return code;
+    }
+    return FALLBACK;
+  }
+
+  function show(lang) {
+    var sections = document.querySelectorAll('section[data-lang]');
+    for (var i = 0; i < sections.length; i++) {
+      var match = sections[i].getAttribute('data-lang') === lang;
+      sections[i].classList.toggle('active', match);
+      if (match) {
+        document.documentElement.setAttribute('lang', sections[i].getAttribute('lang') || lang);
+        var t = sections[i].getAttribute('data-title');
+        if (t) document.title = t;
+      }
+    }
+    var links = document.querySelectorAll('.langbar a');
+    for (var j = 0; j < links.length; j++) {
+      links[j].classList.toggle('active', links[j].getAttribute('data-lang') === lang);
+    }
+  }
+
+  show(requested());
+  window.addEventListener('hashchange', function () { show(requested()); });
+})();
+</script>
 
 </body>
 </html>
